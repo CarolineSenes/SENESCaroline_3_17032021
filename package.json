@@ -1,0 +1,21 @@
+{
+  "name": "senescaroline_3_18032021",
+  "version": "1.0.0",
+  "description": "\"P3_Ohmyfood_Dynamisez une page web avec des animations CSS\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineSenes/SENESCaroline_3_17032021.git"
+  },
+  "author": "\"Caroline SENES\"",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/CarolineSenes/SENESCaroline_3_17032021/issues"
+  },
+  "homepage": "https://github.com/CarolineSenes/SENESCaroline_3_17032021#readme"
+}
