@@ -50,6 +50,7 @@ html {
 
 body {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -90,9 +91,7 @@ li {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 0.7rem;
 }
 
@@ -139,11 +138,10 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-.fonctionnement__nbr {
-  background-color: #9356DC;
-  border-radius: 25px;
-  width: 2rem;
-  height: 2rem;
+@media screen and (min-width: 992px) {
+  .fonctionnement h2 {
+    width: 100%;
+  }
 }
 .fonctionnement .etape {
   display: flex;
@@ -194,8 +192,19 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-
-.card {
+@media screen and (min-width: 768px) {
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurants h2 {
+    width: 100%;
+  }
+}
+.restaurants .card {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -205,13 +214,18 @@ header {
   position: relative;
   background-color: #FFF;
 }
-.card__img {
+@media screen and (min-width: 768px) {
+  .restaurants .card {
+    width: 48%;
+  }
+}
+.restaurants .card__img {
   width: 100%;
   height: 172px;
   object-fit: cover;
   border-radius: 1.2rem 1.2rem 0 0;
 }
-.card__new {
+.restaurants .card__new {
   color: #008766;
   background-color: #99e2d0;
   padding: 0.5rem 1rem;
@@ -222,13 +236,13 @@ header {
   top: 0.75rem;
   right: 0.75rem;
 }
-.card__description {
+.restaurants .card__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 0.7rem;
 }
-.card__description__txt {
+.restaurants .card__description__txt {
   display: flex;
   flex-direction: column;
 }
