@@ -1,0 +1,14 @@
+.btn{
+    @include box-shadow;
+    border-radius: 100px;
+    background-image: linear-gradient($color-secondary,$color-primary);
+    padding: 1.1rem 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    color: $color-txt-secondary;
+    text-align: center;
+    &:hover{
+        background-image: linear-gradient(lighten($color-secondary,2%),lighten($color-primary,2%));
+        @include box-shadow(0.5)
+    }
+}

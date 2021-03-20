@@ -3,3 +3,20 @@
         @content;
     }
 }
+
+@mixin display{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin box-shadow($opacity: 0.4){
+    box-shadow: 0rem 0.3rem 0.6rem 0rem rgba($color-txt-primary, $opacity)
+}
+
+@mixin radius($radius: 1.2){
+    border-radius: $radius + rem;
+}
+
+@mixin gradient {
+    background-image: linear-gradient($color-secondary,$color-primary);
+}
