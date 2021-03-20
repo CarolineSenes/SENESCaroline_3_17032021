@@ -14,22 +14,17 @@
 }
 
 .icon-like {
-  position: absolute;
-  width: 1.25rem;
-  height: 1.25rem;
-  top: 25%;
-  right: 0rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
 }
 .icon-like--vide {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  position: absolute;
 }
 .icon-like--plein {
-  font-size: 1.25rem;
-  visibility: visible;
-}
-.icon-like--plein:active {
-  visibility: visible;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-size: 1.5rem;
+  position: absolute;
 }
 
 .footer {
@@ -120,22 +115,22 @@ header {
   font-weight: 700;
 }
 .presentation__intro {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: #f6f6f6;
   padding-top: 2rem;
   padding-bottom: 4rem;
-  flex-direction: column;
 }
 .presentation__intro h2 {
   text-align: center;
+  padding-bottom: 0;
 }
 .presentation__intro p {
   color: #353535;
   font-size: 1.1rem;
   text-align: center;
   font-weight: 300;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .fonctionnement {
@@ -230,16 +225,12 @@ header {
 .card__description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0.7rem;
 }
 .card__description__txt {
   display: flex;
   flex-direction: column;
-  margin-left: 0.7rem;
-  margin: 0.7rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  position: relative;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

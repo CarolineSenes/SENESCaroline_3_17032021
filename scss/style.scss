@@ -92,20 +92,21 @@ header{
         }
     }
     &__intro{
-        @include display;
+        text-align: center;
         background-color: $color-light;
         padding-top: 2rem;
         padding-bottom: 4rem;
-        flex-direction: column;
         h2{
             text-align: center;
+            padding-bottom: 0;
         }
         p{
             color: $color-dark;
             font-size: 1.1rem;
             text-align: center;
             font-weight: 300;
-            padding-bottom: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
         }
     }
 }
@@ -197,15 +198,12 @@ header{
     &__description{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 0.7rem;
         &__txt{
         display: flex;
         flex-direction: column;
-        margin-left: 0.7rem;
-        margin: 0.7rem;
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem; 
-        position: relative;
-        width: 100%;
         }
+        
     }
 }

@@ -1,18 +1,13 @@
 .icon-like{
-    position: absolute;
-    width: 1.25rem;
-    height: 1.25rem;
-    top: 25%;
-    right: 0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
     &--vide{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        position: absolute;
     }
     &--plein{
-        font-size: 1.25rem;
-        visibility: visible;
-        &:active{
-            visibility: visible;
-            @include gradient;
-        }
+        font-size: 1.5rem;
+        position: absolute;
     }
 }
