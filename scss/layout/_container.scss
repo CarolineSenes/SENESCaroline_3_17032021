@@ -1,0 +1,15 @@
+.container{
+    @media screen and (min-width: 768px){
+        max-width: 1024px;
+        width: 100%;
+        flex-direction: row;
+    }
+    &--restaurants{
+        @media screen and (min-width: 768px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto;
+        }
+    }
+}

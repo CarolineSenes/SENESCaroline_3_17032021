@@ -12,7 +12,7 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-// @import "./layout/container";
+@import "./layout/container";
 // @import "./layout/form";
 
 
@@ -114,62 +114,70 @@ header{
     padding: 3rem 1.3rem 4rem 1.3rem;
     @include display;
     flex-direction: column;
+    @media screen and (min-width: 992px){
+        align-items: center;
+    }
     h2{
         @media screen and (min-width: 992px){
             width: 100%;
         }
     }
-    .etape{
-        @include display;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        align-items: center;
-        background-color: $color-light;
-        @include box-shadow(0.2);
-        @include radius;
-        font-weight: bold;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.4rem;
-        margin-left: 0.7rem;
-        &__nbr{
-            color: $color-txt-secondary;
-            background-color: $color-primary;
-            border-radius: 100%;
-            width: 1.4rem;
-            height: 1.4rem;
-            font-weight: normal;
+    .list{
+        @media screen and (min-width: 992px) {
+            max-width: 992px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .etape{
             @include display;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
             align-items: center;
-            font-size: 0.9rem;
-            transform: translateX(-50%);
-        }
-        &__icon{
-            color: $color-icon;
-            padding-left: 0.5rem;
-        }
+            background-color: $color-light;
+            @include box-shadow(0.2);
+            @include radius;
+            font-weight: bold;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.4rem;
+            margin-left: 0.7rem;
+            &__nbr{
+                color: $color-txt-secondary;
+                background-color: $color-primary;
+                border-radius: 100%;
+                width: 1.4rem;
+                height: 1.4rem;
+                font-weight: normal;
+                @include display;
+                align-items: center;
+                font-size: 0.9rem;
+                transform: translateX(-50%);
+            }
+            &__icon{
+                color: $color-icon;
+                padding-left: 0.5rem;
+            }
 
-        &__txt{
-            padding-left: 1.4rem;
+            &__txt{
+                padding-left: 1.4rem;
+            }
+            &:hover{
+                background-color: rgba($color-primary, 0.15);
+            }
+            &:hover .etape__icon{
+                color: $color-primary;
+            }
+            @media screen and (min-width: 992px) {
+                width: 30%;
+            }    
         }
-        &:hover{
-            background-color: rgba($color-primary, 0.15);
-        }
-        &:hover .etape__icon{
-            color: $color-primary;
-        }
-    }
+    }    
 }
 .restaurants{
     padding: 3rem 1.3rem 4rem 1.3rem;
     background-color: $color-light;
     @include display;
     flex-direction: column;
-    @media screen and (min-width: 768px){
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
     h2{
         @media screen and (min-width: 768px){
             width: 100%;

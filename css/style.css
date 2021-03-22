@@ -32,6 +32,12 @@
   color: #f6f6f6;
   padding: 1.7rem;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+}
 .footer h1 {
   font-size: 1.2rem;
   font-weight: normal;
@@ -41,6 +47,22 @@
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
 }
 
 html {
@@ -139,11 +161,23 @@ header {
   flex-direction: column;
 }
 @media screen and (min-width: 992px) {
+  .fonctionnement {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
   .fonctionnement h2 {
     width: 100%;
   }
 }
-.fonctionnement .etape {
+@media screen and (min-width: 992px) {
+  .fonctionnement .list {
+    max-width: 992px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.fonctionnement .list .etape {
   display: flex;
   justify-content: center;
   justify-content: flex-start;
@@ -158,7 +192,7 @@ header {
   margin-bottom: 1.4rem;
   margin-left: 0.7rem;
 }
-.fonctionnement .etape__nbr {
+.fonctionnement .list .etape__nbr {
   color: #FFF;
   background-color: #9356DC;
   border-radius: 100%;
@@ -171,18 +205,23 @@ header {
   font-size: 0.9rem;
   transform: translateX(-50%);
 }
-.fonctionnement .etape__icon {
+.fonctionnement .list .etape__icon {
   color: #7e7e7e;
   padding-left: 0.5rem;
 }
-.fonctionnement .etape__txt {
+.fonctionnement .list .etape__txt {
   padding-left: 1.4rem;
 }
-.fonctionnement .etape:hover {
+.fonctionnement .list .etape:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
-.fonctionnement .etape:hover .etape__icon {
+.fonctionnement .list .etape:hover .etape__icon {
   color: #9356DC;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement .list .etape {
+    width: 30%;
+  }
 }
 
 .restaurants {
@@ -191,13 +230,6 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .restaurants {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }
 @media screen and (min-width: 768px) {
   .restaurants h2 {
