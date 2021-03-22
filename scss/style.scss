@@ -25,6 +25,9 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
+    @media screen and (max-width: 374px) {
+        font-size: 80%;
+    }
 }
 
 body{
@@ -45,6 +48,11 @@ h1{
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1.8rem;
+}
+
+.heading__tertiary{
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .titre-menu{
@@ -129,7 +137,6 @@ li{
     }
     .list{
         @media screen and (min-width: 992px) {
-            max-width: 992px;
             display: flex;
             justify-content: space-between;
         }
@@ -232,10 +239,7 @@ li{
 }
 
 .menu{
-    padding: 2rem 1.3rem 2.6rem 1.3rem;
-    background-color: $color-light;
     margin-top: -3.3rem;
-    border-radius: 2.5rem 2.5rem 0 0;
     &__titre{
         display: flex;
         flex-direction: row;
@@ -244,5 +248,8 @@ li{
         align-items: baseline;
         padding-right: 1rem;
         padding-bottom: 0;
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+        }
     }
 }

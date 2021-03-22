@@ -1,6 +1,9 @@
 .groupe{
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1024px) {
+        width: 31%
+    }
     &__titre{
         font-weight: normal;
         color: $color-dark;
@@ -29,6 +32,9 @@
             display: flex;
             align-items: flex-end;
             font-weight: bold;
+        }
+        &__compo{
+            font-size: 0.95rem;
         }
     }
 }
