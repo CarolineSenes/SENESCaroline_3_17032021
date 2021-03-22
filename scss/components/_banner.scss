@@ -1,5 +1,8 @@
 .banner{
+    box-sizing: border-box;
     &__img{
         width: 100%;
+        max-height: 30rem;
+        object-fit: cover;
     }
 }

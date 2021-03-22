@@ -1,0 +1,34 @@
+.groupe{
+    display: flex;
+    flex-direction: column;
+    &__titre{
+        font-weight: normal;
+        color: $color-dark;
+        margin-top: 1.5rem;
+        margin-bottom: 1.4rem;
+    }
+    .plat{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: $color-txt-secondary;
+        margin: 0rem -0.4rem 1rem -0.4rem;
+        padding: 0.7rem 1.4rem 0.7rem 0.5rem;
+        @include radius(1);
+        @include box-shadow;
+        &__description{
+            display: flex;
+            flex-direction: column;
+        }
+        &__titre{
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        &__prix{
+            display: flex;
+            align-items: flex-end;
+            font-weight: bold;
+        }
+    }
+}
