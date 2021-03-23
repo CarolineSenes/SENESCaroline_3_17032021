@@ -18,5 +18,5 @@
 }
 
 @mixin gradient {
-    background-image: linear-gradient($color-secondary,$color-primary);
+    background-color: linear-gradient($color-secondary,$color-primary);
 }

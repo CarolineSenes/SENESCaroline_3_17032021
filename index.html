@@ -12,6 +12,13 @@
         <title>ohmyfood</title>
       </head>
 <body>
+  <!-- loading spinner -->
+  <section class="load">
+    <div class="load__ball load__ball--1"></div>
+    <div class="load__ball load__ball--2"></div>
+    <div class="load__ball load__ball--3"></div>
+  </section>
+
   <!-- header -->
   <header>
     <h1 class="header__logo">ohmyfood</h1>
@@ -21,13 +28,13 @@
   <section class="presentation">
     <div class="presentation__localisation">
       <i class="fas fa-map-marker-alt"></i>
-      <span>Paris, Belleville</span>
+      <input type="search" value="Paris, Belleville" id="city" />
     </div>
 
     <div class="presentation__intro">
       <h2>Réservez le menu qui <br>vous convient</h2>
       <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-      <a href="#" class="btn">Explorer nos restaurants</a>
+      <a href="#restaurants" class="btn">Explorer nos restaurants</a>
     </div>
   </section>
 
@@ -56,7 +63,7 @@
   </section>
 
   <!-- restaurants -->
-  <section class="restaurants">
+  <section id="restaurants" class="restaurants">
     <div class="container container--restaurants">
       <h2 class="heading__secondary">Restaurants</h2>
       <article class="card">
@@ -68,9 +75,9 @@
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
               </div>
-              <div class="icon-like">
-                <i class="far fa-heart icon-like--vide"></i> <!-- coeur vide -->
-                <i class="fas fa-heart icon-like--plein"></i> <!-- coeur plein -->
+              <div class="like">
+                <i class="far fa-heart like__icon like__icon--nobg"></i>
+                <i class="fas fa-heart like__icon like__icon--bg"></i>
               </div>
             </div>
         </a>
@@ -84,25 +91,25 @@
               <h3>La note enchantée</h3>
               <p>Charonne</p>
             </div>
-              <div class="icon-like">
-                <i class="far fa-heart icon-like--vide"></i> <!-- coeur vide -->
-                <i class="fas fa-heart icon-like--plein"></i> <!-- coeur plein -->
-              </div>
+            <div class="like">
+              <i class="far fa-heart like__icon like__icon--nobg"></i>
+              <i class="fas fa-heart like__icon like__icon--bg"></i>
+            </div>
           </div>
         </a>
       </article>
       <article class="card">
-        <a href="#">
+        <a href="pages/alafrancaise.html">
           <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant A la française" class="card__img">
           <div class="card__description">
             <div class="card__description__txt">
               <h3>A la française</h3>
               <p>Cité Rouge</p>
             </div>
-              <div class="icon-like">
-                <i class="far fa-heart icon-like--vide"></i> <!-- coeur vide -->
-                <i class="fas fa-heart icon-like--plein"></i> <!-- coeur plein -->
-              </div>
+            <div class="like">
+              <i class="far fa-heart like__icon like__icon--nobg"></i>
+              <i class="fas fa-heart like__icon like__icon--bg"></i>
+            </div>
           </div>
         </a>
       </article>
@@ -114,10 +121,10 @@
             <h3 class="card__title">Le délice des sens</h3>
             <p>Folie-Méricourt</p>
           </div>
-            <div class="icon-like">
-              <i class="far fa-heart icon-like--vide"></i> <!-- coeur vide -->
-              <i class="fas fa-heart icon-like--plein"></i> <!-- coeur plein -->
-            </div>
+          <div class="like">
+            <i class="far fa-heart like__icon like__icon--nobg"></i>
+            <i class="fas fa-heart like__icon like__icon--bg"></i>
+          </div>
         </div>
       </a>
       </article>
@@ -147,7 +154,7 @@
             </a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link footer__icon">
+            <a href="mailto:contact@ohmyfood.fr" class="footer__link footer__icon">
               Contact
             </a>
           </li>

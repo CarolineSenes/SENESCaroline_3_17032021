@@ -2,7 +2,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$color-txt-primary: #000;
+$color-txt-primary: rgb(0, 0, 0);
 $color-txt-secondary: #FFF;
 
 $color-bg-localisation: #eaeaea;
@@ -21,3 +21,4 @@ $breakpoints: (
   large: 1200px,
   xxl: 1400px
 );
+
