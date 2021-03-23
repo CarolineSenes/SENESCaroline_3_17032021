@@ -1,3 +1,14 @@
+body {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
 .btn {
   box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.4);
   border-radius: 100px;
@@ -7,6 +18,9 @@
   transition: 0.2s;
   color: #FFF;
   text-align: center;
+}
+.btn--menu {
+  padding: 1.1rem 3rem;
 }
 .btn:hover {
   background-image: linear-gradient(#ff83dd, #985ede);
@@ -29,6 +43,7 @@
 
 .banner {
   box-sizing: border-box;
+  margin: auto;
 }
 .banner__img {
   width: 100%;
@@ -50,6 +65,16 @@
   color: #353535;
   margin-top: 1.5rem;
   margin-bottom: 1.4rem;
+  position: relative;
+}
+.groupe__titre::after {
+  content: "";
+  width: 2.4rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
 }
 .groupe .plat {
   display: flex;
@@ -155,15 +180,6 @@ html {
   html {
     font-size: 80%;
   }
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
 h1 {
@@ -389,6 +405,12 @@ li {
   .menu__titre {
     width: 100%;
   }
+}
+.menu__btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
