@@ -1,13 +1,38 @@
-.icon-like{
-    width: 1.5rem;
-    height: 1.5rem;
+.like{
+    width: 2rem;
+    height: 2rem;
     position: relative;
-    &--vide{
-        font-size: 1.5rem;
-        position: absolute;
+    &:hover{
+        &::after{
+        opacity: 1;
+        }
     }
-    &--plein{
-        font-size: 1.5rem;
+    &::after{
+        content: "";
         position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(to right top, $color-secondary,$color-primary);
+        mix-blend-mode: screen;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &__icon{
+        position: absolute;
+        font-size: 2rem;
+        &--bg{
+            transition: opacity 1s;
+            &:hover{
+                opacity: 0;
+            }
+        }
+        &--nobg{
+            opacity: 0;
+            transition: opacity 1s;
+        }
     }
 }
+  

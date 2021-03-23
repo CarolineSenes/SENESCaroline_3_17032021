@@ -23,22 +23,43 @@ body {
   padding: 1.1rem 3rem;
 }
 .btn:hover {
-  background-image: linear-gradient(#ff83dd, #985ede);
+  background-image: linear-gradient(#ff88de, #9b63df);
   box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.5);
 }
 
-.icon-like {
-  width: 1.5rem;
-  height: 1.5rem;
+.like {
+  width: 2rem;
+  height: 2rem;
   position: relative;
 }
-.icon-like--vide {
-  font-size: 1.5rem;
-  position: absolute;
+.like:hover::after {
+  opacity: 1;
 }
-.icon-like--plein {
-  font-size: 1.5rem;
+.like::after {
+  content: "";
   position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to right top, #FF79DA, #9356DC);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: all 1s;
+}
+.like__icon {
+  position: absolute;
+  font-size: 2rem;
+}
+.like__icon--bg {
+  transition: opacity 1s;
+}
+.like__icon--bg:hover {
+  opacity: 0;
+}
+.like__icon--nobg {
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .banner {
@@ -397,7 +418,7 @@ li {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding-right: 1rem;
   padding-bottom: 0;
 }
