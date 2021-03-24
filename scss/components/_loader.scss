@@ -6,6 +6,9 @@
     align-items: center;
     background: rgba(0,0,0,0.8);
     position: fixed;
+    animation: loader-off .01s 2s both;
+    z-index: 100;
+    top: 0;
     &__ball{
       width: 1.5rem;
       height: 1.5rem;
@@ -40,3 +43,10 @@
       transform: scale(1.1);
     }
   }
+
+  @keyframes loader-off {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 

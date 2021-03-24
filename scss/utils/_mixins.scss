@@ -20,3 +20,13 @@
 @mixin gradient {
     background-color: linear-gradient($color-secondary,$color-primary);
 }
+
+@mixin menu-on($delay){
+    animation: groupe-on 300ms cubic-bezier(.33,-0.75,.27,1.53) $delay both;
+}
+
+@mixin ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
