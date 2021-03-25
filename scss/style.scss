@@ -49,12 +49,6 @@ h1{
     font-weight: normal;
 }
 
-.titre-menu{
-    font-family: 'Shrikhand', cursive, sans-serif;
-    font-weight: normal;
-    font-size: 1.8rem;
-}
-
 h1, h2, h3, h4, p{
     margin: 0;
     padding-bottom: 0;
@@ -234,7 +228,10 @@ li{
 
 .menu{
     margin-top: -3.3rem;
-    &__titre{
+    &__nom-restaurant{
+        font-family: 'Shrikhand', cursive, sans-serif;
+        font-weight: normal;
+        font-size: 1.8rem;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -242,9 +239,7 @@ li{
         align-items: center;
         padding-right: 1rem;
         padding-bottom: 0;
-        @media screen and (min-width: 1024px) {
-            width: 100%;
-        }
+        width: 100%;
     }
     &__btn{
         width: 100%;

@@ -2,36 +2,27 @@
     width: 2rem;
     height: 2rem;
     position: relative;
-    &:hover{
-        &::after{
-        opacity: 1;
-        }
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background: linear-gradient(to right top, $color-secondary,$color-primary);
-        mix-blend-mode: screen;
-        opacity: 0;
-        transition: all 1s;
-    }
-
     &__icon{
         position: absolute;
         font-size: 2rem;
-        &--bg{
-            transition: opacity 1s;
+        &--nobg{
+            z-index: 5;
+            transition: all 1000ms;
             &:hover{
-                opacity: 0;
+              opacity: 0;
+            }
+            &:hover + .fas{
+              opacity: 1;
             }
         }
-        &--nobg{
+        &--bg{
+            color: black;
             opacity: 0;
-            transition: opacity 1s;
+            color: transparent;
+            background-clip: content-box;
+            background: -webkit-linear-gradient(top,$color-secondary,$color-primary);
+            -webkit-background-clip: text;
+            transition: all 1000ms;
         }
     }
 }

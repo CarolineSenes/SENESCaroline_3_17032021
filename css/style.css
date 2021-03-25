@@ -32,34 +32,28 @@ body {
   height: 2rem;
   position: relative;
 }
-.like:hover::after {
-  opacity: 1;
-}
-.like::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: linear-gradient(to right top, #FF79DA, #9356DC);
-  mix-blend-mode: screen;
-  opacity: 0;
-  transition: all 1s;
-}
 .like__icon {
   position: absolute;
   font-size: 2rem;
 }
-.like__icon--bg {
-  transition: opacity 1s;
-}
-.like__icon--bg:hover {
-  opacity: 0;
-}
 .like__icon--nobg {
+  z-index: 5;
+  transition: all 1000ms;
+}
+.like__icon--nobg:hover {
   opacity: 0;
-  transition: opacity 1s;
+}
+.like__icon--nobg:hover + .fas {
+  opacity: 1;
+}
+.like__icon--bg {
+  color: black;
+  opacity: 0;
+  color: transparent;
+  background-clip: content-box;
+  background: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  transition: all 1000ms;
 }
 
 .banner {
@@ -205,29 +199,29 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(#f6f6f6 40%, #99E2D0);
   position: fixed;
   animation: loader-off 0.01s 2s both;
   z-index: 100;
   top: 0;
 }
-.load__ball {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 1rem;
-  border-radius: 100%;
+.load__letter {
+  font-family: "Shrikhand";
+  font-size: 5vw;
+  padding: 1vw;
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: loader 1s linear infinite;
 }
-.load__ball--1 {
-  background-color: #9356DC;
+.load__letter--1 {
   animation-delay: 0.1s;
 }
-.load__ball--2 {
-  background-color: #FF79DA;
+.load__letter--2 {
   animation-delay: 0.2s;
 }
-.load__ball--3 {
-  background-color: #99E2D0;
+.load__letter--3 {
   animation-delay: 0.3s;
 }
 
@@ -341,12 +335,6 @@ h1 {
 .heading__tertiary {
   font-size: 1rem;
   font-weight: normal;
-}
-
-.titre-menu {
-  font-family: "Shrikhand", cursive, sans-serif;
-  font-weight: normal;
-  font-size: 1.8rem;
 }
 
 h1, h2, h3, h4, p {
@@ -536,7 +524,10 @@ li {
 .menu {
   margin-top: -3.3rem;
 }
-.menu__titre {
+.menu__nom-restaurant {
+  font-family: "Shrikhand", cursive, sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -544,11 +535,7 @@ li {
   align-items: center;
   padding-right: 1rem;
   padding-bottom: 0;
-}
-@media screen and (min-width: 1024px) {
-  .menu__titre {
-    width: 100%;
-  }
+  width: 100%;
 }
 .menu__btn {
   width: 100%;
