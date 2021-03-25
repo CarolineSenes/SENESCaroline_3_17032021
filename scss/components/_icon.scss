@@ -1,0 +1,21 @@
+.icon{
+    &__header{
+        position: absolute;
+        top: 34%;
+        left: 0;
+        color: $color-dark;
+        font-size: 1.3rem;
+        padding-left: 1.25rem;
+    }
+    &--localisation{
+        line-height: 1.2;
+        display: inline-block;
+        font-style: normal;
+        margin-right: 1rem;
+    }
+    &__footer{
+        width: 1.5rem;
+        margin-right: 0.3rem;
+    }
+}
+

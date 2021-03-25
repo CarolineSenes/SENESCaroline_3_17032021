@@ -4,6 +4,32 @@ body{
     @include display;
     flex-direction: column;
     margin: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+    padding-bottom: 0;
+}
+
+a{
+    color: currentColor;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    line-height: 1.5rem;
+
 }

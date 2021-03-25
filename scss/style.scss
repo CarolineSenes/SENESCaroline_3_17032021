@@ -1,7 +1,5 @@
 @import "./utils/variables";
-// @import "./utils/functions";
 @import "./utils/mixins";
-// @import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
@@ -13,65 +11,15 @@
 @import "./components/groupe";
 @import "./components/input";
 @import "./components/loader";
+@import "./components/icon";
+@import "./components/tag";
+@import "./components/card";
+@import "./components/etape";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/container";
-// @import "./layout/form";
 
-
-// @import "./pages/work";
-// @import "./pages/about";
-// @import "./pages/project";
-
-html{
-    font-size: 100%;
-    box-sizing: border-box;
-    @media screen and (max-width: 374px) {
-        font-size: 80%;
-    }
-}
-
-h1{
-    font-family: 'Shrikhand', cursive, sans-serif;
-    font-size: 2rem;
-    font-weight: normal;
-}
-
-.heading__secondary{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-bottom: 1.8rem;
-}
-
-.heading__tertiary{
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-h1, h2, h3, h4, p{
-    margin: 0;
-    padding-bottom: 0;
-}
-
-a{
-    color: currentColor;
-    text-decoration: none;
-    &:hover{
-        cursor: pointer;
-    }
-}
-
-ul{
-    padding: 0;
-    margin: 0;
-}
-
-li{
-    list-style: none;
-    line-height: 1.5rem;
-
-}
 
 .presentation{
     &__localisation{
@@ -81,15 +29,6 @@ li{
         background-color: $color-bg-localisation;
         box-shadow: inset 0 5px 6px -5px rgba(53, 53, 53, 0.5);
         color: $color-dark;
-        i{
-            line-height: 1.2;
-            display: inline-block;
-            font-style: normal;
-            margin-right: 1rem;
-        }
-        span{
-            font-weight: 700;
-        }
     }
     &__intro{
         text-align: center;
@@ -128,51 +67,9 @@ li{
             display: flex;
             justify-content: space-between;
         }
-        .etape{
-            @include display;
-            justify-content: flex-start;
-            flex-wrap: nowrap;
-            align-items: center;
-            background-color: $color-light;
-            @include box-shadow(0.2);
-            @include radius;
-            font-weight: bold;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-            margin-bottom: 1.4rem;
-            margin-left: 0.7rem;
-            &__nbr{
-                color: $color-txt-secondary;
-                background-color: $color-primary;
-                border-radius: 100%;
-                width: 1.4rem;
-                height: 1.4rem;
-                font-weight: normal;
-                @include display;
-                align-items: center;
-                font-size: 0.9rem;
-                transform: translateX(-50%);
-            }
-            &__icon{
-                color: $color-icon;
-                padding-left: 0.5rem;
-            }
-
-            &__txt{
-                padding-left: 1.4rem;
-            }
-            &:hover{
-                background-color: rgba($color-primary, 0.15);
-            }
-            &:hover .etape__icon{
-                color: $color-primary;
-            }
-            @media screen and (min-width: 992px) {
-                width: 30%;
-            }    
-        }
     }    
 }
+
 .restaurants{
     padding: 3rem 1.3rem 4rem 1.3rem;
     background-color: $color-light;
@@ -183,55 +80,11 @@ li{
             width: 100%;
         }    
     }
-    .card{
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        @include radius;
-        @include box-shadow;
-        margin-bottom: 1.25rem;
-        position: relative;
-        background-color: $color-txt-secondary;
-        @media screen and (min-width: 768px){
-            width: 48%;
-        }    
-        &__img{
-            width: 100%;
-            height: 172px;
-            object-fit: cover;
-            border-radius: 1.2rem 1.2rem 0 0;
-        }
-        &__new{
-            color: $color-new;
-            background-color: $color-new-light;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-            font-size: 0.8rem;
-            @include radius(0.2);
-            position: absolute;
-            top: 0.75rem;
-            right: 0.75rem;
-        }
-        &__description{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem 0.7rem;
-            &__txt{
-            display: flex;
-            flex-direction: column;
-            }
-            
-        }
-    }
 }
 
 .menu{
     margin-top: -3.3rem;
     &__nom-restaurant{
-        font-family: 'Shrikhand', cursive, sans-serif;
-        font-weight: normal;
-        font-size: 1.8rem;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -240,11 +93,5 @@ li{
         padding-right: 1rem;
         padding-bottom: 0;
         width: 100%;
-    }
-    &__btn{
-        width: 100%;
-        text-align: center;
-        margin-top: 3rem;
-        margin-bottom: 2.4rem;
     }
 }

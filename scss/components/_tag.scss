@@ -1,0 +1,13 @@
+.tag{
+    &__new{
+        color: $color-new;
+        background-color: $color-new-light;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        font-size: 0.8rem;
+        @include radius(0.2);
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+}

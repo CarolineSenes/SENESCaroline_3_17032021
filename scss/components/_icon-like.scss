@@ -1,7 +1,9 @@
 .like{
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     position: relative;
+    @include display;
+    align-items: center;
     &__icon{
         position: absolute;
         font-size: 2rem;

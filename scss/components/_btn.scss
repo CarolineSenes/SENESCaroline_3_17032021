@@ -7,11 +7,11 @@
     transition: 0.2s;
     color: $color-txt-secondary;
     text-align: center;
-    &--menu{
-        padding: 1.1rem 3rem;
-    }
     &:hover{
         background-image: linear-gradient(lighten($color-secondary,3%),lighten($color-primary,3%));
         @include box-shadow(0.5)
+    }
+    &--menu{
+        padding: 1.1rem 3rem;
     }
 }

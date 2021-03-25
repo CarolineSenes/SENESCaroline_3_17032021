@@ -4,6 +4,10 @@
         width: 100%;
         flex-direction: row;
     }
+    &--intro{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
     &--restaurants{
         @media screen and (min-width: 768px){
             display: flex;
@@ -12,7 +16,7 @@
             margin: auto;
         }
     }
-    &--menu{
+    &__menu{
         background-color: $color-light;
         border-radius: 2.5rem 2.5rem 0 0;
         padding: 2rem 1.3rem 2.6rem 1.3rem;
@@ -22,6 +26,12 @@
             justify-content: space-between;
             max-width: 1280px;
             margin: auto;
+        }
+        &--bnt{
+            width: 100%;
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 2.4rem;
         }
     }
 }

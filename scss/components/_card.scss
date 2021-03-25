@@ -1,0 +1,30 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    @include radius;
+    @include box-shadow;
+    margin-bottom: 1.25rem;
+    position: relative;
+    background-color: $color-txt-secondary;
+    @media screen and (min-width: 768px){
+        width: 48%;
+    }    
+    &__img{
+        width: 100%;
+        height: 172px;
+        object-fit: cover;
+        border-radius: 1.2rem 1.2rem 0 0;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 0.7rem;
+        &__txt{
+        display: flex;
+        flex-direction: column;
+        }
+        
+    }
+}

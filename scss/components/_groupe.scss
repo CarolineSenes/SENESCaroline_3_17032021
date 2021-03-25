@@ -6,8 +6,6 @@
         width: 31%
     }
     &__titre{
-        font-weight: normal;
-        color: $color-dark;
         margin-top: 1.5rem;
         margin-bottom: 1.4rem;
         position: relative;
@@ -51,6 +49,7 @@
         flex-wrap: nowrap;
         background-color: $color-txt-secondary;
         margin-bottom: 1rem;
+        cursor: pointer;
         @include radius(1);
         @include box-shadow;
         &__txt{
@@ -61,8 +60,6 @@
             @include ellipsis;
         }
         &__nom{
-            font-weight: bold;
-            font-size: 1.1rem;
             @include ellipsis;
         }
         &__commentaire{

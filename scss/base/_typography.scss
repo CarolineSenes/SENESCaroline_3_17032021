@@ -1,0 +1,56 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+html{
+    font-size: 100%;
+    @media screen and (max-width: 374px) {
+        font-size: 80%;
+    }
+}
+
+.footer{
+    &__link{
+        color: $color-light;
+    }
+}
+
+.heading{
+    &__logo{
+        font-family: 'Shrikhand', cursive, sans-serif;
+        font-weight: normal;
+        &--header{
+            font-size: 2rem;
+        }
+        &--footer{
+            font-size: 1.2rem;
+            color: $color-light;
+        }
+    }
+    &__primary{
+        &--menu{
+            font-family: 'Shrikhand', cursive, sans-serif;
+            font-weight: normal;
+            font-size: 1.8rem;
+        }
+    }
+    &__secondary{
+        &--home{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 1.8rem;
+        }
+        &--menu-groupe{
+            color: $color-dark;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+    }
+    &__tertiary{
+        &--plat-menu{
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+}
