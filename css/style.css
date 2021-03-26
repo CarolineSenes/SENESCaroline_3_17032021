@@ -167,8 +167,7 @@ html {
 }
 
 .banner {
-  box-sizing: border-box;
-  margin: auto;
+  box-sizing: content-box;
 }
 
 .banner__img {
