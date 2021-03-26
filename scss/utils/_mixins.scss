@@ -1,5 +1,11 @@
-@mixin tablet{
-    @media screen and (min-width: mapget($breakpoints, md)){
+@mixin responsive-mobile-only{
+    @media screen and (max-width: 374px) {
+        @content;
+    }
+}
+
+@mixin responsive($bp){
+    @media screen and (min-width: $bp){
         @content;
     }
 }
@@ -20,7 +26,7 @@
 }
 
 @mixin box-shadow($opacity: 0.4){
-    box-shadow: 0rem 0.3rem 0.6rem 0rem rgba($color-txt-primary, $opacity)
+    box-shadow: 0rem 0.3rem 0.6rem 0rem rgba($color-black, $opacity)
 }
 
 @mixin radius($radius: 1.2){

@@ -1,7 +1,7 @@
 .tag{
     &__new{
-        color: $color-new;
-        background-color: $color-new-light;
+        color: dark-new($color-tertiary);
+        background-color: $color-tertiary;
         padding: 0.5rem 1rem;
         font-weight: bold;
         font-size: 0.8rem;

@@ -1,9 +1,8 @@
 .footer{
     background-color: $color-dark;
     padding: 1.7rem;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center
+    @include responsive(map-get($breakpoints, s)){
+        @include display;
     }
     h1{
         padding-bottom: 1rem;

@@ -1,5 +1,5 @@
 body{
-    max-width: 1920px;
+    max-width: (map-get($breakpoints, xl));
     width: 100%;
     @include display;
     flex-direction: column;

@@ -1,0 +1,6 @@
+@function dark-new($clr){
+    $hue:hue($clr);
+    $sat:100%;
+    $light:26%;
+    @return hsl($hue,$sat,$light);
+}

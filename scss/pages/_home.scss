@@ -3,7 +3,7 @@
         padding: 1rem;
         @include display;
         align-items: flex-end;
-        background-color: $color-bg-localisation;
+        background-color: $color-medium;
         box-shadow: inset 0 5px 6px -5px rgba(53, 53, 53, 0.5);
     }
     &__intro{
@@ -27,16 +27,16 @@
     padding: 3rem 1.3rem 4rem 1.3rem;
     @include display;
     flex-direction: column;
-    @media screen and (min-width: 992px){
+    @include responsive(map-get($breakpoints, md)){
         align-items: center;
     }
     h2{
-        @media screen and (min-width: 992px){
+        @include responsive(map-get($breakpoints, md)){
             width: 100%;
         }
     }
     .list{
-        @media screen and (min-width: 992px) {
+        @include responsive(map-get($breakpoints, md)){
             @include space-between;
         }
     }    
@@ -48,7 +48,7 @@
     @include display;
     flex-direction: column;
     h2{
-        @media screen and (min-width: 768px){
+        @include responsive(map-get($breakpoints, s)){
             width: 100%;
         }    
     }

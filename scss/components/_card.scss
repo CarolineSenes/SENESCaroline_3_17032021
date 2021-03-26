@@ -5,8 +5,8 @@
     @include box-shadow;
     margin-bottom: 1.25rem;
     position: relative;
-    background-color: $color-txt-secondary;
-    @media screen and (min-width: 768px){
+    background-color: $color-white;
+    @include responsive(map-get($breakpoints, s)){
         width: 48%;
     }    
     &__img{

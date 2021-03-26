@@ -1,7 +1,7 @@
 // groupe de plats //
 .groupe{
     @include column;
-    @media screen and (min-width: 1024px) {
+    @include responsive(map-get($breakpoints, l)){
         width: 31%
     }
     &__titre{
@@ -45,7 +45,7 @@
         @include space-between;
         flex-direction: row;
         flex-wrap: nowrap;
-        background-color: $color-txt-secondary;
+        background-color: $color-white;
         margin-bottom: 1rem;
         $cursor: cursor;
         @include radius(1);
@@ -84,7 +84,7 @@
             font-size: 1rem;
             border-radius: 50px;
             padding: 0.3rem;
-            background-color: $color-txt-secondary;
+            background-color: $color-white;
             transition: transform 400ms 100ms;
         }
         &:hover &__validation{

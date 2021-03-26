@@ -2,25 +2,22 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$color-txt-primary: rgb(0, 0, 0);
-$color-txt-secondary: #FFF;
+$color-black: rgb(0, 0, 0);
+$color-white: #FFF;
 
-$color-bg-localisation: #eaeaea;
-$color-light: #f6f6f6;
-$color-dark: #353535;
-$color-icon: #7e7e7e;
-$color-new: #008766;
-$color-new-light: #99e2d0;
+$color-light: lighten($color-black, 96%);
+$color-medium: lighten($color-black, 92%);
+$color-dark: lighten($color-black, 21%);
+$color-icon: lighten($color-black, 49%);
 
 $cursor: pointer;
 $radius: 1.2;
 
 $breakpoints: (
-  xs: 280px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  large: 1200px,
-  xxl: 1400px
+  xs: 374px,
+  s: 768px,
+  md: 992px,
+  l: 1024px,
+  xl: 1920px
 );
 

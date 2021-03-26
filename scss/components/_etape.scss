@@ -12,7 +12,7 @@
     margin-bottom: 1.4rem;
     margin-left: 0.7rem;
     &__nbr{
-        color: $color-txt-secondary;
+        color: $color-white;
         background-color: $color-primary;
         border-radius: 100%;
         width: 1.4rem;
@@ -23,11 +23,6 @@
         font-size: 0.9rem;
         transform: translateX(-50%);
     }
-    &__icon{
-        color: $color-icon;
-        padding-left: 0.5rem;
-    }
-
     &__txt{
         padding-left: 1.4rem;
     }
@@ -37,7 +32,7 @@
     &:hover .etape__icon{
         color: $color-primary;
     }
-    @media screen and (min-width: 992px) {
+    @include responsive(map-get($breakpoints, md)){
         width: 30%;
     }    
 }

@@ -1,5 +1,5 @@
 .container{
-    @media screen and (min-width: 768px){
+    @include responsive(map-get($breakpoints, s)){
         max-width: 1280px;
         width: 100%;
         flex-direction: row;
@@ -9,7 +9,7 @@
         padding-right: 0.3rem;
     }
     &--restaurants{
-        @media screen and (min-width: 768px){
+        @include responsive(map-get($breakpoints, s)){
             @include space-between;
             flex-wrap: wrap;
             margin: auto;
@@ -19,7 +19,7 @@
         background-color: $color-light;
         border-radius: 2.5rem 2.5rem 0 0;
         padding: 2rem 1.3rem 2.6rem 1.3rem;
-        @media screen and (min-width: 1024px) {
+        @include responsive(map-get($breakpoints, md)){
             @include space-between;
             flex-wrap: wrap;
             max-width: 1280px;

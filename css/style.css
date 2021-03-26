@@ -45,16 +45,16 @@ html {
 }
 
 .presentation__localisation {
-  color: #353535;
+  color: #363636;
 }
 .presentation__intro p {
-  color: #353535;
+  color: #363636;
   font-size: 1.1rem;
   font-weight: 300;
 }
 
 .footer__link {
-  color: #f6f6f6;
+  color: whitesmoke;
 }
 .footer__prix {
   font-weight: bold;
@@ -62,6 +62,9 @@ html {
 
 .plat__commentaire {
   font-size: 0.95rem;
+}
+.plat__prix {
+  font-weight: bold;
 }
 
 .heading__logo {
@@ -73,7 +76,7 @@ html {
 }
 .heading__logo--footer {
   font-size: 1.2rem;
-  color: #f6f6f6;
+  color: whitesmoke;
 }
 .heading__primary--menu {
   font-family: "Shrikhand", cursive, sans-serif;
@@ -86,7 +89,7 @@ html {
   padding-bottom: 1.8rem;
 }
 .heading__secondary--menu-groupe {
-  color: #353535;
+  color: #363636;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -268,7 +271,7 @@ html {
 input {
   border: none;
   outline: 0;
-  color: #353535;
+  color: #363636;
   background: inherit;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -329,7 +332,7 @@ input {
   position: absolute;
   top: 34%;
   left: 0;
-  color: #353535;
+  color: #363636;
   font-size: 1.3rem;
   padding-left: 1.25rem;
 }
@@ -344,9 +347,14 @@ input {
   margin-right: 0.3rem;
 }
 
+.etape__icon {
+  color: #7d7d7d;
+  padding-left: 0.5rem;
+}
+
 .tag__new {
-  color: #008766;
-  background-color: #99e2d0;
+  color: #008564;
+  background-color: #99E2D0;
   padding: 0.5rem 1rem;
   font-weight: bold;
   font-size: 0.8rem;
@@ -394,7 +402,7 @@ input {
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
   box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.2);
   border-radius: 1.2rem;
   font-weight: bold;
@@ -415,10 +423,6 @@ input {
   align-items: center;
   font-size: 0.9rem;
   transform: translateX(-50%);
-}
-.etape__icon {
-  color: #7e7e7e;
-  padding-left: 0.5rem;
 }
 .etape__txt {
   padding-left: 1.4rem;
@@ -445,7 +449,7 @@ input {
 }
 
 .footer {
-  background-color: #353535;
+  background-color: #363636;
   padding: 1.7rem;
 }
 @media screen and (min-width: 768px) {
@@ -478,11 +482,11 @@ input {
   }
 }
 .container__menu {
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2rem 1.3rem 2.6rem 1.3rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .container__menu {
     display: flex;
     justify-content: space-between;
@@ -503,12 +507,12 @@ input {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: #eaeaea;
+  background-color: #ebebeb;
   box-shadow: inset 0 5px 6px -5px rgba(53, 53, 53, 0.5);
 }
 .presentation__intro {
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
@@ -547,7 +551,7 @@ input {
 
 .restaurants {
   padding: 3rem 1.3rem 4rem 1.3rem;
-  background-color: #f6f6f6;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   flex-direction: column;
