@@ -18,7 +18,7 @@
             }
         }
         &--bg{
-            color: black;
+            color: $color-black;
             opacity: 0;
             color: transparent;
             background-clip: content-box;
@@ -28,4 +28,3 @@
         }
     }
 }
-  
