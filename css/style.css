@@ -20,10 +20,6 @@ a {
   color: currentColor;
   text-decoration: none;
 }
-a:hover {
-  cursor: pointer;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -48,8 +44,24 @@ html {
   }
 }
 
+.presentation__localisation {
+  color: #353535;
+}
+.presentation__intro p {
+  color: #353535;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .footer__link {
   color: #f6f6f6;
+}
+.footer__prix {
+  font-weight: bold;
+}
+
+.plat__commentaire {
+  font-size: 0.95rem;
 }
 
 .heading__logo {
@@ -85,7 +97,7 @@ html {
 
 .btn {
   box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.4);
-  border-radius: 100px;
+  border-radius: 50px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   padding: 1.1rem 1.3rem;
   cursor: pointer;
@@ -191,7 +203,6 @@ html {
   flex-wrap: nowrap;
   background-color: #FFF;
   margin-bottom: 1rem;
-  cursor: pointer;
   border-radius: 1rem;
   box-shadow: 0rem 0.3rem 0.6rem 0rem rgba(0, 0, 0, 0.4);
 }
@@ -210,7 +221,6 @@ html {
   overflow: hidden;
 }
 .plat__commentaire {
-  font-size: 0.95rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -218,7 +228,6 @@ html {
 .plat__prix {
   display: flex;
   align-items: flex-end;
-  font-weight: bold;
   padding: 0 1.4rem 0.7rem 0.5rem;
 }
 .plat__validation {
@@ -238,7 +247,7 @@ html {
   font-size: 1rem;
   border-radius: 50px;
   padding: 0.3rem;
-  background-color: white;
+  background-color: #FFF;
   transition: transform 400ms 100ms;
 }
 .plat:hover .plat__validation {
@@ -463,8 +472,8 @@ input {
 @media screen and (min-width: 768px) {
   .container--restaurants {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
   }
 }
@@ -476,8 +485,8 @@ input {
 @media screen and (min-width: 1024px) {
   .container__menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: 1280px;
     margin: auto;
   }
@@ -496,7 +505,6 @@ input {
   align-items: flex-end;
   background-color: #eaeaea;
   box-shadow: inset 0 5px 6px -5px rgba(53, 53, 53, 0.5);
-  color: #353535;
 }
 .presentation__intro {
   text-align: center;
@@ -509,10 +517,7 @@ input {
   padding-bottom: 0;
 }
 .presentation__intro p {
-  color: #353535;
-  font-size: 1.1rem;
   text-align: center;
-  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
@@ -558,9 +563,9 @@ input {
 }
 .menu__nom-restaurant {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: center;
   padding-right: 1rem;
   padding-bottom: 0;

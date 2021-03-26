@@ -1,6 +1,5 @@
 .card{
-    display: flex;
-    flex-direction: column;
+    @include column;
     box-sizing: border-box;
     @include radius;
     @include box-shadow;
@@ -17,13 +16,11 @@
         border-radius: 1.2rem 1.2rem 0 0;
     }
     &__description{
-        display: flex;
-        justify-content: space-between;
+        @include space-between;
         align-items: center;
         padding: 1.25rem 0.7rem;
         &__txt{
-        display: flex;
-        flex-direction: column;
+        @include column;
         }
         
     }

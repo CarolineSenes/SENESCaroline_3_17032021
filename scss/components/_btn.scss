@@ -1,9 +1,9 @@
 .btn{
     @include box-shadow;
-    border-radius: 100px;
+    border-radius: 50px;
     background-image: linear-gradient($color-secondary,$color-primary);
     padding: 1.1rem 1.3rem;
-    cursor: pointer;
+    cursor: $cursor;
     transition: 0.2s;
     color: $color-txt-secondary;
     text-align: center;

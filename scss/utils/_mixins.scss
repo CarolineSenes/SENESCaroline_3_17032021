@@ -9,6 +9,16 @@
     justify-content: center;
 }
 
+@mixin column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
 @mixin box-shadow($opacity: 0.4){
     box-shadow: 0rem 0.3rem 0.6rem 0rem rgba($color-txt-primary, $opacity)
 }

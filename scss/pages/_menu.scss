@@ -1,0 +1,12 @@
+.menu{
+    margin-top: -3.3rem;
+    &__nom-restaurant{
+        @include space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-right: 1rem;
+        padding-bottom: 0;
+        width: 100%;
+    }
+}

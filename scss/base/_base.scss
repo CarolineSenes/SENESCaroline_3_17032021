@@ -19,7 +19,7 @@ a{
     color: currentColor;
     text-decoration: none;
     &:hover{
-        cursor: pointer;
+        $cursor: cursor;
     }
 }
 

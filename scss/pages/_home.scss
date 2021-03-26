@@ -1,0 +1,55 @@
+.presentation{
+    &__localisation{
+        padding: 1rem;
+        @include display;
+        align-items: flex-end;
+        background-color: $color-bg-localisation;
+        box-shadow: inset 0 5px 6px -5px rgba(53, 53, 53, 0.5);
+    }
+    &__intro{
+        text-align: center;
+        background-color: $color-light;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        h2{
+            text-align: center;
+            padding-bottom: 0;
+        }
+        p{
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.fonctionnement{
+    padding: 3rem 1.3rem 4rem 1.3rem;
+    @include display;
+    flex-direction: column;
+    @media screen and (min-width: 992px){
+        align-items: center;
+    }
+    h2{
+        @media screen and (min-width: 992px){
+            width: 100%;
+        }
+    }
+    .list{
+        @media screen and (min-width: 992px) {
+            @include space-between;
+        }
+    }    
+}
+
+.restaurants{
+    padding: 3rem 1.3rem 4rem 1.3rem;
+    background-color: $color-light;
+    @include display;
+    flex-direction: column;
+    h2{
+        @media screen and (min-width: 768px){
+            width: 100%;
+        }    
+    }
+}

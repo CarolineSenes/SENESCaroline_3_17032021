@@ -10,9 +10,31 @@ html{
     }
 }
 
+.presentation{
+    &__localisation{
+        color: $color-dark;
+    }
+    &__intro{
+        p{
+            color: $color-dark;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    }
+}
+
 .footer{
     &__link{
         color: $color-light;
+    }
+    &__prix{
+        font-weight: bold;
+    }
+}
+
+.plat{
+    &__commentaire{
+        font-size: 0.95rem;
     }
 }
 
