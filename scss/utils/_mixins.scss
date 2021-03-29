@@ -38,7 +38,7 @@
 }
 
 @mixin menu-on($delay){
-    animation: groupe-on 300ms cubic-bezier(.33,-0.75,.27,1.53) $delay both;
+    animation: groupe-on 900ms cubic-bezier(.33,-0.75,.27,1) $delay both;
 }
 
 @mixin ellipsis{
