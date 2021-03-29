@@ -2,8 +2,9 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-$color-black: rgb(0, 0, 0);
 $color-white: #FFF;
+$color-black: rgb(0, 0, 0);
+
 
 $color-light: lighten($color-black, 96%);
 $color-medium: lighten($color-black, 92%);
