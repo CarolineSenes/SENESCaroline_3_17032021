@@ -1,7 +1,7 @@
 
 # Ohmyfood! - Dynamisez une page web avec des animations CSS
 
-  
+![logo](https://github.com/CarolineSenes/SENESCaroline_3_17032021/blob/master/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
   
 
 ## Description générale du projet
