@@ -4,9 +4,9 @@
     background-image: linear-gradient($color-secondary,$color-primary);
     padding: 1.1rem 1.3rem;
     cursor: $cursor;
-    transition: 0.2s;
     color: $color-white;
     text-align: center;
+    transition: 200ms;
     &:hover{
         background-image: linear-gradient(lighten($color-secondary,3%),lighten($color-primary,3%));
         @include box-shadow(0.5)

@@ -13,11 +13,11 @@
     font-family: 'Shrikhand';
     font-size: 5vw;
     padding: 1vw;
-    background: linear-gradient($color-secondary 0%, $color-primary 100%);
+    @include gradient;
     background-clip: content-box;
     -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
-    animation: loader 1s linear infinite;
+    animation: loader 2s linear infinite;
     &--1{
        animation-delay: 0.1s
     }

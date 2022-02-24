@@ -87,7 +87,7 @@
             border-radius: 50px;
             padding: 0.3rem;
             background-color: $color-white;
-            transition: transform 400ms 100ms;
+            transition: all 400ms 100ms;
         }
         &:hover &__validation{
             width: 3.5rem;

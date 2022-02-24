@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./css/prefixed/style.min.css" />
+        <meta name="description" content="Site de réservation de repas des meilleurs restaurants de votre ville" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
         <link rel="icon" type="image/png" href="images/logo/favicon.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -33,7 +34,8 @@
   <section class="presentation">
     <div class="presentation__localisation">
       <i class="fas fa-map-marker-alt icon icon--localisation"></i>
-      <input type="search" value="Paris, Belleville" id="city" />
+      <label class="sr-only" for="city">Ville recherchée :</label>
+      <input type="search" id="city" placeholder="Paris, Belleville" aria-label="entrer la ville recherchée"/>
     </div>
 
     <div class="presentation__intro container--intro">
